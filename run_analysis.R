@@ -119,7 +119,8 @@ names(meanStdData) <- gsub(names(meanStdData), pattern = "()",
 # Remove invalid characters from new column names. This helps with
 # later filtering #
 
-valid_column_names <- make.names(names=names(meanStdData), unique=TRUE, allow_ = TRUE)
+valid_column_names <- make.names(names=names(meanStdData), unique=TRUE, 
+                                 allow_ = TRUE)
 names(meanStdData) <- valid_column_names
 
 # Return activity and subject columns to meanStdData and rename #
@@ -145,13 +146,16 @@ names(meanStdData)[2] = "Subject"
 finalData = data.table(meanStdData[1:144,])
 finalData[1:144, 1:81] = 0
 
-# Nested for loops select for activity, for each activity each subject, for each activity-subject pair each column in the table of means and SDs. Store means of each column in appropriate cell of finalData #
+# Nested for loops select for activity, for each activity each subject, for 
+#each activity-subject pair each column in the table of means and SDs. Store 
+#means of each column in appropriate cell of finalData #
 
 row = 1
 for (i in 1:6) {               
         for (j in 1:24) {       
                 for (k in 3:81) {   
-                        tempData = data.table(filter(meanStdData, Activity==i, Subject==j))
+                        tempData = data.table(filter(meanStdData, Activity==i, 
+                                                     Subject==j))
                         finalData[row, 1] = i
                         finalData[row, 2] = j
                         finalData[row, k] = colMeans(tempData[,k, with=FALSE])
@@ -164,7 +168,12 @@ for (i in 1:6) {
 
 # Replace activity codes with activity names #
 
-finalData <- finalData %>% mutate(Activity=recode(Activity, "1" = "Walking", "2" = "Walking Upstairs", "3" = "Walking Downstairs", "4" = "Sitting", "5" = "Standing", "6" = "Laying"))
+finalData <- finalData %>% mutate(Activity=recode(Activity, "1" = "Walking", 
+                                                  "2" = "Walking Upstairs", 
+                                                  "3" = "Walking Downstairs", 
+                                                  "4" = "Sitting", 
+                                                  "5" = "Standing", 
+                                                  "6" = "Laying"))
 
         ########## END ##########
 
