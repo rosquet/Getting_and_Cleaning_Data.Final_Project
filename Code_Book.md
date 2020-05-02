@@ -35,9 +35,7 @@ For each record in the dataset it is provided:
 <li>An identifier of the subject who carried out the experiment.</li>
 </ul>
 
-#### Variables
-
-Average body acceleration in the X, Y and Z directions:
+#### Variables:
 
     time_domain_body_accelerometer_mean_X-axis
 
@@ -51,8 +49,6 @@ Average body acceleration in the X, Y and Z directions:
 
     frequency_domain_body_accelerometer_mean_Z-axis
 
-Standard deviation of body acceleration in the X, Y and Z directions:
-
     time_domain_body_accelerometer_standard_deviation_X-axis
 
     time_domain_body_accelerometer_standard_deviation_Y-axis
@@ -65,8 +61,6 @@ Standard deviation of body acceleration in the X, Y and Z directions:
 
     frequency_domain_body_accelerometer_standard_deviation_Z-axis
 
-Average gravity acceleration in the X, Y and Z directions:
-
     time_domain_gravity_accelerometer_mean_X-axis
 
     time_domain_gravity_accelerometer_mean_Y-axis
@@ -75,17 +69,11 @@ Average gravity acceleration in the X, Y and Z directions:
 
     Note: Not applicable for frequency domain.
 
-Standard deviation of gravity acceleration in the X, Y and Z directions:
-
     time_domain_gravity_accelerometer_standard_deviation_X-axis
 
     time_domain_gravity_accelerometer_standard_deviation_Y-axis
 
     time_domain_gravity_accelerometer_standard_deviation_Z-axis
-
-    Note: Not applicable for frequency domain.
-
-Average body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
 
     time_domain_body_accelerometer_jerk_mean_X-axis
 
@@ -99,8 +87,6 @@ Average body acceleration jerk (derivation of the acceleration in time) in the X
 
     frequency_domain_body_accelerometer_jerk_mean_Z-axis
 
-Standard deviation of body acceleration jerk (derivation of the acceleration in time) in the X, Y and Z directions:
-
     time_domain_body_accelerometer_jerk_standard_deviation_X-axis
 
     time_domain_body_accelerometer_jerk_standard_deviation_Y-axis
@@ -112,8 +98,6 @@ Standard deviation of body acceleration jerk (derivation of the acceleration in 
     frequency_domain_body_accelerometer_jerk_standard_deviation_Y-axis
 
     frequency_domain_body_accelerometer_jerk_standard_deviation_Z-axis
-
-Average body angular velocity in the X, Y and Z directions:
 
     time_domain_body_gyroscope_mean_X-axis
 
@@ -127,8 +111,6 @@ Average body angular velocity in the X, Y and Z directions:
 
     frequency_domain_body_gyroscope_mean_Z-axis
 
-Standard deviation of body angular velocity in the X, Y and Z directions:
-
     time_domain_body_gyroscope_standard_deviation_X-axis
 
     time_domain_body_gyroscope_standard_deviation_Y-axis
@@ -141,8 +123,6 @@ Standard deviation of body angular velocity in the X, Y and Z directions:
 
     frequency_domain_body_gyroscope_standard_deviation_Z-axis
 
-Average body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
-
     time_domain_body_gyroscope_jerk_mean_X-axis
 
     time_domain_body_gyroscope_jerk_mean_Y-axis
@@ -150,8 +130,6 @@ Average body angular velocity jerk (derivation of the angular velocity in time) 
     time_domain_body_gyroscope_jerk_mean_Z-axis
 
     Note: Not applicable for frequency domain.
-
-Standard deviation of body angular velocity jerk (derivation of the angular velocity in time) in the X, Y and Z directions:
 
     time_domain_body_gyroscope_jerk_standard_deviation_X-axis
 
@@ -161,8 +139,6 @@ Standard deviation of body angular velocity jerk (derivation of the angular velo
 
     Note: not applicable for frequency domain.
 
-Average and standard deviation of magnitude of body acceleration:
-
     time_domain_body_accelerometer_magnitude_mean
 
     time_domain_body_accelerometer_magnitude_standard_deviation
@@ -170,8 +146,6 @@ Average and standard deviation of magnitude of body acceleration:
     frequency_domain_body_accelerometer_magnitude_mean
 
     frequency_domain_body_accelerometer_magnitude_standard_deviation
-
-Average and standard deviation of magnitude of body acceleration jerk (derivation of the acceleration in time):
 
     time_domain_body_accelerometer_jerk_magnitude_mean
 
@@ -181,8 +155,6 @@ Average and standard deviation of magnitude of body acceleration jerk (derivatio
 
     frequency_domain_body_accelerometer_jerk_magnitude_standard_deviation
 
-Average and standard deviation of magnitude of body angular velocity:
-
     time_domain_body_gyroscope_magnitude_mean
 
     time_domain_body_gyroscope_magnitude_standard_deviation
@@ -191,8 +163,6 @@ Average and standard deviation of magnitude of body angular velocity:
 
     frequency_domain_body_gyroscope_magnitude_standard_deviation
 
-Average and standard deviation of magnitude of body angular velocity jerk (derivation of the angular velocity in time):
-
     time_domain_body_gyroscope_jerk_magnitude_mean
 
     time_domain_body_gyroscope_jerk_magnitude_standard_deviation
@@ -200,7 +170,6 @@ Average and standard deviation of magnitude of body angular velocity jerk (deriv
     frequency_domain_body_gyroscope_jerk_magnitude_mean
 
     frequency_domain_body_gyroscope_jerk_magnitude_standard_deviation
-
 
 
 ### Structure of run_analysis.R
