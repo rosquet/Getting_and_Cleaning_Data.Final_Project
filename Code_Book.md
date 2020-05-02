@@ -5,15 +5,10 @@ date: "5/2/2020"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 ## Final Project: JHU Getting and Cleaning Data
 
 This document provides information about this repository, part of the final 
-project of JHU's Getting and Cleaning Data course. Specifically, data, variables,
-and transformations are identified.
+project of JHU's Getting and Cleaning Data course.
 
 ### Data
 
